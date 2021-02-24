@@ -1,0 +1,16 @@
+Repeating
+    I found that Controller class has actionPerformed which has many same checking selected JCheckBox. I decided to divide
+    this part to new method called modelCheck which input arraylist of JCheckBox to make it easy to check selected JCheck
+    and can input more JCheckBox. Moreover in the same class, Image_Panel inner class has Image_Panel method which has the
+    same process of input and output image, so I decided to divide the same process to new method to manage image layout by
+    passing JLabel. That mean I found and build new method to check or do and loop to do.
+Long method
+    There have long method which are too many lines of code that are easier to write code than to read. The long method is
+    hard to read and find error if it has any error. So I decided to extract method to small method in each inner class.
+    In Controller class, actionPerformed method is too long that I extract to 2 method to support it consist mange text file
+    and model check and DecodeButton inner class has actionPerformed method which is also too long, so I extract this method
+    to do text file method and message method. Moreover, View class has long method too which is Encode_Panel inner class
+    having Encode_Panel method that mange JPanel box, so I decided to extract them to smaller method to mange the layout of
+    each JPanel box and call them in Encode_Panel method. Decode_Panel inner class has Decode_Panel metod is too long method
+    which extract encodeButton and JTextArea layout method to manage each layout.
+
